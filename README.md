@@ -1,3 +1,5 @@
+<h2 align="center">*Fork I made to practice algorithms and data structures.</h2>
+
 <h1 align="center">Complete Intro to Computer Science: Algorithms and Data Structures</h1> <br>
 
 <p align="center">
