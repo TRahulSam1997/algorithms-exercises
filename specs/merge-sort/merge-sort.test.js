@@ -5,9 +5,30 @@
 
   You'll need to write more than just one function
 */
+const merge = (first, nums) => {
+  let holdArr = [];
+
+  while(!first.length === 0  && !nums.length === 0) {
+    if (first[0] < nums[0]){
+      holdArr.push(first.shift())
+    } else {
+      holdArr.push(nums.shift())
+    }
+  }
+
+  return [...holdArr, ...first, ...nums];
+}
 
 const mergeSort = (nums) => {
   // code goes here
+  let mid = nums.length/2;
+
+  if (nums.length<2) {
+    return nums;
+  }
+
+  let first = nums.splice(0, mid);
+  return merge(mergeSort(first), mergeSort(nums))
 };
 
 // unit tests
