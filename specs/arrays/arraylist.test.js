@@ -39,7 +39,7 @@ class ArrayList {
     //   return res;
     // }
 
-    return this.delete(this.index - 1)
+    return this.delete(this.length - 1)
   }
 
   get(index) {
