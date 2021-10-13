@@ -32,12 +32,14 @@ class ArrayList {
   }
 
   pop() {
-    if ((this.length - 1) != 0) {
-      let res = this.data[this.length - 1];
-      delete this.data[this.length - 1];
-      this.length--;
-      return res;
-    }
+    // if ((this.length - 1) != 0) {
+    //   let res = this.data[this.length - 1];
+    //   delete this.data[this.length - 1];
+    //   this.length--;
+    //   return res;
+    // }
+
+    return this.delete(this.index - 1)
   }
 
   get(index) {
